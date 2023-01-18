@@ -13,7 +13,7 @@
 
 El sprint uno se basa en la construcción de una pagina web que permita el encritado y desencriptado de texto, haciendo uso de unas llaves especificas de encriptacion. El desafio tiene como objetivo el demostrar todos las habilidades adquiridas a lo largo del curso "Principiante en programación".
 
-#### Llaves de encriptacion
+### Llaves de encriptacion
 
 Llaves de encriptacion usadas:
 
@@ -31,10 +31,14 @@ Llaves de encriptacion usadas:
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 ```
 Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+"aeropuerto"  👉 "aienterroberpufatenterrtober"
+"aienterroberpufatenterrtober"  👉 "aeropuerto"
 ```
 - La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
 - El resultado debe ser mostrado en la pantalla.
 
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
+---
+
+#### Marca este proyecto con una estrella ⭐
