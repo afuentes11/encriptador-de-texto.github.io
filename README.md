@@ -6,7 +6,7 @@
 
 ### Sprint uno para el challenge de **_Proyecto ONE_** - **_Oracle+Alura LATAM_**:
 
-#### Marca este proyecto con una estrella ⭐ y visita el [sitio web](https://afuentes11.github.io/encriptador-de-texto.github.io/) 
+#### Marca este proyecto con una estrella ⭐ y visita el [encriptador de texto](https://afuentes11.github.io/encriptador-de-texto.github.io/) 
 
 ## 🔑 Descripción
 
@@ -40,4 +40,4 @@ Por ejemplo:
 
 ---
 
-#### Marca este proyecto con una estrella ⭐
+#### No te olvides de marca este proyecto con una estrella ⭐ y visitar el [encriptador de texto](https://afuentes11.github.io/encriptador-de-texto.github.io/) 
