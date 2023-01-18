@@ -46,13 +46,8 @@ body{
     padding: 0 20px;
 }
 
-.logo:hover, .logo:active{
+.activar-animacion-logo:not(:active){
     animation: giro 10s linear forwards;
-    transform-style: preserve-3d;
-}
-
-.logo:not(:hover),  .logo:not(:active){
-    animation: giro-inverso 10s linear forwards;
     transform-style: preserve-3d;
 }
 
@@ -69,21 +64,6 @@ body{
     90% { transform: rotateY(9000deg); }
     100% { transform: rotateY(9360deg); }
 }
-
-@keyframes giro-inverso {
-    0% { transform: rotateY(0deg); }
-    10% { transform: rotateY(-360deg); }
-    20% { transform: rotateY(-900deg); }
-    30% { transform: rotateY(-1620deg); }
-    40% { transform: rotateY(-2520deg); }
-    50% { transform: rotateY(-3600deg); }
-    60% { transform: rotateY(-6120deg); }
-    70% { transform: rotateY(-7740deg); }
-    80% { transform: rotateY(-8640deg); }
-    90% { transform: rotateY(-9000deg); }
-    100% { transform: rotateY(-9360deg); }
-}
-
 
 .contenedor-entrada{
     margin-top: 4em;

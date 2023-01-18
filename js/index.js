@@ -17,7 +17,11 @@ var mensaje = document.getElementById('sin-mensaje');
 // informacion
 var informacion = document.getElementById('informacion');
 
+//contenedor de salida
 var contenedor_salida = document.getElementById('contenedor-salida');
+
+//logo
+var logo = document.getElementById('logo');
 
 const entrada_de_texto = {
     //Cambia el área para mostrar el texto encriptado/desencriptado.
@@ -31,7 +35,6 @@ const entrada_de_texto = {
         sin_texto.classList.remove('ocultar');
     }
 }
-
 
 //Funcion para encriptar texto
 const transformaciones_encriptar = {
@@ -122,6 +125,7 @@ btn_desencriptar.addEventListener("click", function(event){
 
 let btn_copiar_pulsado = false;
 btn_copiar.addEventListener("click", function(){
+
     if (!btn_copiar_pulsado){
         btn_copiar_pulsado = true;
         const texto = texto_salida.textContent;
@@ -136,3 +140,7 @@ btn_copiar.addEventListener("click", function(){
         });
     }
 });
+
+logo.addEventListener("click", function(){
+    logo.classList.add('activar-animacion-logo');
+})
