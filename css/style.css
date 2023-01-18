@@ -320,7 +320,7 @@ footer img:hover {
 }
 
 footer img:not(:hover) {
-    animation: zoom-out-icon 1s;
+    animation: zoom-icon 1s;
 }
 
 @keyframes zoom-in-icon {
