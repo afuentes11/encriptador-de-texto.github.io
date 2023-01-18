@@ -14,6 +14,11 @@ var btn_copiar = document.getElementById("copiar");
 //Texto "Ningún mensaje fue encontrado"
 var mensaje = document.getElementById('sin-mensaje');
 
+// informacion
+var informacion = document.getElementById('informacion');
+
+var contenedor_salida = document.getElementById('contenedor-salida');
+
 const entrada_de_texto = {
     //Cambia el área para mostrar el texto encriptado/desencriptado.
     existe: function(){
@@ -48,11 +53,41 @@ const transformaciones_desencriptar = {
 
 let btn_funcion_pulsado = false;
 function encriptar_desencriptar(accion , texto) {
+    if(texto_entrada.value === ''){
+        if(!btn_funcion_pulsado){
 
-    if(texto_entrada.value !== ''){
+            contenedor_salida.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            btn_funcion_pulsado = true;
+            entrada_de_texto.no_existe();
+            mensaje.classList.add('animacion-sin-texto');
+            setTimeout(function(){
+                mensaje.classList.remove('animacion-sin-texto');
+                btn_funcion_pulsado = false;
+            }, 1500);
+        }
+    }else if(texto.match(/[A-ZÀ-Úà-ú]+/g)!==null){
+        if(!btn_funcion_pulsado){
+            btn_funcion_pulsado = true;
+            entrada_de_texto.no_existe();
+            informacion.classList.add('animacion-sin-texto');
+            setTimeout(function(){
+                informacion.classList.remove('animacion-sin-texto');
+                btn_funcion_pulsado = false;
+            }, 1500);
+        }
+    }
+    else{
+
+        contenedor_salida.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
 
         let texto_encriptado = texto
-
         let transformaciones = (accion == 'encriptar') ? 
                                 {...transformaciones_encriptar} : 
                                 (accion == 'desencriptar') ?
@@ -60,36 +95,28 @@ function encriptar_desencriptar(accion , texto) {
                                 {}
 
         Object.keys(transformaciones).forEach(key => {
-            let regex = new RegExp(key, 'gi');
+            let regex = new RegExp(key, 'g');
             texto_encriptado = texto_encriptado.replace(regex, transformaciones[key]);
         });
 
         texto_salida.textContent = texto_encriptado;
         entrada_de_texto.existe();
         btn_copiar.classList.remove('check');
-    }else{
-        if(!btn_funcion_pulsado){
-            btn_funcion_pulsado = true;
-            entrada_de_texto.no_existe();
-            mensaje.classList.add('animacion-sin-texto');
-            setTimeout(function(){
-                mensaje.classList.remove('animacion-sin-texto');
-                btn_funcion_pulsado = false;
-            }, 500);
-        }
         
     }
 }
 
 //evento clic en el boton encriptar
-btn_encriptar.addEventListener("click", function(){
-    const texto = texto_entrada.value
+btn_encriptar.addEventListener("click", function(event){
+    event.preventDefault();
+    const texto = texto_entrada.value;
     encriptar_desencriptar('encriptar', texto)
 });
 
 //evento clic en el boton desencriptar
-btn_desencriptar.addEventListener("click", function(){
-    const texto = texto_entrada.value
+btn_desencriptar.addEventListener("click", function(event){
+    event.preventDefault();
+    const texto = texto_entrada.value;
     encriptar_desencriptar('desencriptar', texto)
 });
 

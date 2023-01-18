@@ -46,6 +46,45 @@ body{
     padding: 0 20px;
 }
 
+.logo:hover, .logo:active{
+    animation: giro 10s linear forwards;
+    transform-style: preserve-3d;
+}
+
+.logo:not(:hover),  .logo:not(:active){
+    animation: giro-inverso 10s linear forwards;
+    transform-style: preserve-3d;
+}
+
+@keyframes giro {
+    0% { transform: rotateY(0deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(900deg); }
+    30% { transform: rotateY(1620deg); }
+    40% { transform: rotateY(2520deg); }
+    50% { transform: rotateY(3600deg); }
+    60% { transform: rotateY(6120deg); }
+    70% { transform: rotateY(7740deg); }
+    80% { transform: rotateY(8640deg); }
+    90% { transform: rotateY(9000deg); }
+    100% { transform: rotateY(9360deg); }
+}
+
+@keyframes giro-inverso {
+    0% { transform: rotateY(0deg); }
+    10% { transform: rotateY(-360deg); }
+    20% { transform: rotateY(-900deg); }
+    30% { transform: rotateY(-1620deg); }
+    40% { transform: rotateY(-2520deg); }
+    50% { transform: rotateY(-3600deg); }
+    60% { transform: rotateY(-6120deg); }
+    70% { transform: rotateY(-7740deg); }
+    80% { transform: rotateY(-8640deg); }
+    90% { transform: rotateY(-9000deg); }
+    100% { transform: rotateY(-9360deg); }
+}
+
+
 .contenedor-entrada{
     margin-top: 4em;
     display: flex;
@@ -87,12 +126,15 @@ body{
     line-height: 150%;
     color: var(--gray-400);
     margin: 1em 0;
+    transform: scale(1);
+    transform-origin: bottom left;
 }
 
 .informacion::before{
     content: url("../img/icono.svg");
     margin-right: 0.8em;
 }
+
 
 .contenedor-botones{
     display: flex;
@@ -194,7 +236,7 @@ body{
 }
 
 .animacion-sin-texto{
-    animation: zoom-small 0.5s;
+    animation: zoom-small 1.5s;
 }
 
 @keyframes zoom-small {
@@ -317,11 +359,11 @@ footer img {
 }
 
 footer img:hover {
-    animation: zoom-in-icon 1s;
+    animation: zoom-in-icon 1s forwards;
 }
 
 footer img:not(:hover) {
-    animation: zoom-icon 1s;
+    animation: zoom-out-icon 1s;
 }
 
 @keyframes zoom-in-icon {
