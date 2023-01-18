@@ -4,21 +4,17 @@
      <img width="800" heigth="480" src="https://github.com/afuentes11/encriptador-de-texto/blob/master/pagina.png">
 </p>
 
-### ¡Bienvenido al proyecto base del Encriptador de texto! Pasos principales:
+### Sprint uno para el challenge de **_Proyecto ONE_** - **_Oracle+Alura LATAM_**:
 
 #### Marca este proyecto con una estrella ⭐
 
-## 💡 Descripción
+## 🔑 Descripción
 
-Encriptador de texto desarrollado con JavaScript, HTML y CSS para el challenge del **_Proyecto ONE_** de **Oracle+Alura LATAM**.
+El sprint uno se basa en la construcción de una pagina web que permita el encritado y desencriptado de texto, haciendo uso de unas llaves especificas de encriptacion. El desafio tiene como objetivo el demostrar todos las habilidades adquiridas a lo largo del curso "Principiante en programación".
 
-El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada, el objetivo de este desafio es poner a prueba los conocimientos adquiridos durante el curso "Principiante en programación"
+#### Llaves de encriptacion
 
----
-
-## 🔑 Llaves de encriptacion
-
-Las llaves de encriptacion solicitadas son las siguientes:
+Llaves de encriptacion usadas:
 
 - La letra "**a**" es convertida a "**ai**".
 - La letra "**e**" es convertida a "**enter**".
