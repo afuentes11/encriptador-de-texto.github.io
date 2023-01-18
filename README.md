@@ -1,0 +1,1 @@
+# encriptador-de-texto
