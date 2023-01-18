@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-icono.svg" sizes="8x8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="contenedor-logo">
+            <img class="logo" src="img/logo-icono.svg" alt="logo">
+        </div>
+        <div class="contenedor-entrada">
+            <textarea name="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí" class="texto-entrada"></textarea>
+            <p class="informacion">Solo letras minúsculas y sin acentos</p>
+            <div class="contenedor-botones">
+                <button class="boton" id="encriptar">Encriptar</button>
+                <button class="boton boton-transparente" id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor-salida">
+            <div class="con-input " id="sin-texto">
+                <img class="muñeco" src="img/Muñeco.svg" alt="ilustracion">
+                <div class="contenedor-texto">
+                    <p class="texto-bold" id="sin-mensaje" >Ningún mensaje fue encontrado</p>
+                    <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="sin-input ocultar" id="con-texto">
+                <p class="texto-salida" id="texto-salida"></p>
+                <button class="boton boton-transparente boton-salida " id="copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2022 Todos los derechos reservados por Andres Fuentes Martinez</p>
+        <a href="https://github.com/afuentes11" target="_blank">
+            <img src="/img/github.svg" alt="">
+        </a>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
