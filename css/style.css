@@ -30,10 +30,10 @@ body{
 }
 
 .contenedor{
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     padding-bottom: 20px;
     display: flex;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 110px - 1rem);
     gap: 6em;
 }
 
@@ -302,13 +302,14 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
 footer>p {
     
     text-align: center;
     color: var(--gray-200);
-    text-transform: capitalize;
+    text-transform: initial; 
 }
 
 footer img {
@@ -426,6 +427,10 @@ footer img:not(:hover) {
 
     footer{
         padding-bottom: 1rem;
+    }
+
+    footer{
+        flex-direction: column;
     }
 
 }
