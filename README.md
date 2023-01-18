@@ -8,7 +8,7 @@
 
 #### Marca este proyecto con una estrella ⭐ y visita el [encriptador de texto](https://afuentes11.github.io/encriptador-de-texto.github.io/) 
 
-## 🔑 Descripción
+## 🔑 Detalles
 
 El sprint uno se basa en la construcción de una pagina web que permita el encritado y desencriptado de texto, haciendo uso de unas llaves especificas de encriptacion. El desafio tiene como objetivo el demostrar todos las habilidades adquiridas a lo largo del curso "Principiante en programación".
 
